@@ -260,7 +260,7 @@ body {
   color: var(--text-muted);
 }
 
-/* Bannier */
+/* Banner */
 
 .banner-pro {
   padding: 4rem 0;
@@ -283,6 +283,16 @@ body {
   padding: 2rem;
   border-radius: 20px;
   border: 1px solid rgba(148, 163, 184, 0.25);
+
+  /* 🌟 CENTRAGE COMPLET */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Optionnel mais recommandé */
+  height: 100%;
 }
 
 .banner-text h1 {
