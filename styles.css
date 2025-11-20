@@ -34,6 +34,17 @@ body {
   color: var(--text-main);
 }
 
+/* Liens globaux */
+
+a {
+  color: #60a5fa;            /* Bleu clair bien visible sur fond sombre */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #93c5fd;            /* Plus lumineux au survol */
+}
+
 /* Containers & layout */
 
 .container {
@@ -261,6 +272,7 @@ body {
 }
 
 /* Banner */
+
 .banner-full {
   padding: 4rem 1rem 5rem;
   text-align: center;
@@ -284,8 +296,6 @@ body {
   border: 1px solid rgba(148,163,184,0.35);
   box-shadow: 0 25px 50px rgba(0,0,0,0.5);
 }
-
-
 
 /* App card mockup */
 
@@ -852,12 +862,12 @@ body {
 
 .footer-link {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #60a5fa;          /* liens de footer bien visibles */
   text-decoration: none;
 }
 
 .footer-link:hover {
-  color: var(--text-main);
+  color: #93c5fd;
 }
 
 /* Responsive */
