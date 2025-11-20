@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopMahelso Inventory – Application d’inventaire moderne</title>
+  <meta name="description" content="ShopMahelso Inventory est une application d’inventaire moderne pour boutiques, entrepôts et petites entreprises. Gérez vos stocks, vos ventes et vos équipes en temps réel.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <!-- Tu peux remplacer par ton vrai logo -->
+        <span class="logo-mark">SM</span>
+        <span class="logo-text">ShopMahelso Inventory</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#features" class="nav-link">Fonctionnalités</a>
+        <a href="#how-it-works" class="nav-link">Comment ça marche</a>
+        <a href="#screenshots" class="nav-link">Captures</a>
+        <a href="#pricing" class="nav-link">Tarifs</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link nav-cta">Demander une démo</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-badge">Application d’inventaire pour boutiques & entrepôts</span>
+          <h1>Suivez vos stocks, vos ventes et vos équipes en temps réel.</h1>
+          <p class="hero-subtitle">
+            ShopMahelso Inventory centralise vos produits, mouvements de stock, commandes
+            et rapports de ventes dans une interface simple et moderne, pensée pour les
+            propriétaires et leurs employés.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Demander une démo</a>
+            <a href="#features" class="btn btn-outline">Découvrir les fonctionnalités</a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight">
+              <span class="hero-highlight-number">∞</span>
+              <span>Multi-boutiques & multi-utilisateurs</span>
+            </div>
+            <div class="hero-highlight">
+              <span class="hero-highlight-number">24/7</span>
+              <span>Suivi du stock en temps réel</span>
+            </div>
+            <div class="hero-highlight">
+              <span class="hero-highlight-number">+30%</span>
+              <span>de visibilité sur vos ventes*</span>
+            </div>
+          </div>
+          <p class="hero-note">*Estimation basée sur les premiers retours utilisateurs.</p>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Mockup / Aperçu de l’app (placeholder) -->
+          <div class="app-card">
+            <div class="app-card-header">
+              <span class="dot red"></span>
+              <span class="dot orange"></span>
+              <span class="dot green"></span>
+              <span class="app-card-title">Tableau de bord – Boutique principale</span>
+            </div>
+            <div class="app-card-body">
+              <div class="app-kpis">
+                <div class="kpi">
+                  <span class="kpi-label">Ventes du jour</span>
+                  <span class="kpi-value">1 254 €</span>
+                  <span class="kpi-tag kpi-tag-success">+18%</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-label">Stock critique</span>
+                  <span class="kpi-value">7 produits</span>
+                  <span class="kpi-tag kpi-tag-warning">À vérifier</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-label">Commandes en attente</span>
+                  <span class="kpi-value">12</span>
+                  <span class="kpi-tag kpi-tag-info">En cours</span>
+                </div>
+              </div>
+
+              <div class="app-chart-placeholder">
+                <div class="chart-line"></div>
+                <div class="chart-line chart-line-alt"></div>
+                <div class="chart-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <div class="app-list">
+                <div class="app-list-header">
+                  <span>Produit</span>
+                  <span>Stock</span>
+                  <span>Dernier mouvement</span>
+                </div>
+                <div class="app-list-row">
+                  <span>Chaussures sport – Bleu 42</span>
+                  <span>18</span>
+                  <span class="status-pill status-green">Entrée stock</span>
+                </div>
+                <div class="app-list-row">
+                  <span>T-shirt uni – Noir M</span>
+                  <span>4</span>
+                  <span class="status-pill status-orange">Stock bas</span>
+                </div>
+                <div class="app-list-row">
+                  <span>Casquette logo – Rouge</span>
+                  <span>0</span>
+                  <span class="status-pill status-red">Rupture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="hero-visual-caption">
+            Interface claire et moderne pour suivre vos ventes, vos stocks et vos alertes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= À QUI S’ADRESSE L’APP ================= -->
+    <section class="section" id="audience">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pour qui est fait ShopMahelso Inventory&nbsp;?</h2>
+          <p>
+            L’application est pensée pour les petites et moyennes entreprises qui ont besoin
+            d’un suivi simple, fiable et accessible de leurs stocks.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Boutiques physiques</h3>
+            <p>
+              Prêt-à-porter, cosmétique, accessoires, quincaillerie… centralisez
+              vos produits, codes-barres, entrées et sorties de stock.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Commerçants en ligne</h3>
+            <p>
+              Gérez un seul stock pour vos commandes en ligne et vos ventes en boutique.
+              Évitez les ruptures et les surventes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Entrepôts & dépôts</h3>
+            <p>
+              Suivi des mouvements, traçabilité par employé, réglages d’alertes et rapports
+              détaillés pour piloter vos volumes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FONCTIONNALITÉS ================= -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Fonctionnalités clés</h2>
+          <p>Tout ce dont vous avez besoin pour garder le contrôle de votre inventaire.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card feature-card">
+            <h3>Gestion avancée des produits</h3>
+            <p>
+              Créez vos produits avec SKU, variantes, prix d’achat, prix de vente et photos.
+              Filtrez rapidement par catégorie, boutique ou niveau de stock.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <h3>Multi-boutiques & multi-utilisateurs</h3>
+            <p>
+              Gérez plusieurs points de vente dans le même compte. Invitez vos employés
+              avec des rôles (propriétaire, employé, manager) et des droits adaptés.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <h3>Entrées & sorties de stock</h3>
+            <p>
+              Suivez chaque mouvement (achat, vente, correction, perte…) avec l’historique
+              complet et le responsable associé.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <h3>Validation des ventes</h3>
+            <p>
+              Système de commandes avec validation côté propriétaire. Réduction des erreurs,
+              meilleure visibilité sur la marge et les quantités vendues.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <h3>Rapports & statistiques</h3>
+            <p>
+              Tableaux de bord clairs&nbsp;: ventes par jour, produit, employé ou boutique.
+              Export possible pour analyse comptable.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <h3>Alertes stock bas</h3>
+            <p>
+              Notifications et rapports de stock faible pour anticiper les ruptures. Adaptez
+              vos seuils selon vos produits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMENT ÇA MARCHE ================= -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comment ça marche&nbsp;?</h2>
+          <p>Quelques étapes suffisent pour démarrer avec ShopMahelso Inventory.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h3>Créez votre boutique</h3>
+            <p>
+              Renseignez le nom de votre entreprise, vos boutiques et vos devises.
+              Configurez les taxes et les permissions de base.
+            </p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h3>Ajoutez vos produits</h3>
+            <p>
+              Importez vos produits (manuellement ou via fichier CSV) avec leurs stocks
+              initiaux. Ajoutez vos prix d’achat pour suivre vos marges.
+            </p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h3>Vendez & suivez vos stocks</h3>
+            <p>
+              Les employés enregistrent les ventes, le stock se met à jour automatiquement
+              et vous consultez vos rapports en temps réel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAPTURES ================= -->
+    <section class="section section-alt" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <h2>Un aperçu de l’interface</h2>
+          <p>Quelques exemples d’écrans pour visualiser le fonctionnement de l’application.</p>
+        </div>
+
+        <div class="grid grid-3 screenshots-grid">
+          <div class="screenshot-card">
+            <div class="screenshot-placeholder">
+              <span>Tableau de bord</span>
+            </div>
+            <p>Vue d’ensemble des ventes, du stock et des alertes critiques.</p>
+          </div>
+          <div class="screenshot-card">
+            <div class="screenshot-placeholder">
+              <span>Liste des produits</span>
+            </div>
+            <p>Recherche rapide, filtres, stock disponible et seuils configurables.</p>
+          </div>
+          <div class="screenshot-card">
+            <div class="screenshot-placeholder">
+              <span>Historique des mouvements</span>
+            </div>
+            <p>Traçabilité complète par produit, boutique et employé.</p>
+          </div>
+        </div>
+
+        <p class="screenshots-note">
+          Tu pourras remplacer ces blocs par de vraies captures d’écran (format PNG/JPG) de ton application.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= TARIFS ================= -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tarifs simples & transparents</h2>
+          <p>
+            Des formules adaptées aux petites structures comme aux entreprises qui grandissent.
+          </p>
+        </div>
+
+        <div class="grid grid-3 pricing-grid">
+          <div class="pricing-card">
+            <h3>Essentiel</h3>
+            <p class="pricing-price">À partir de <strong>XX €/mois</strong></p>
+            <p class="pricing-subtext">Pour une petite boutique ou un seul point de vente.</p>
+            <ul class="pricing-features">
+              <li>1 boutique</li>
+              <li>Jusqu’à X utilisateurs</li>
+              <li>Gestion des produits & du stock</li>
+              <li>Rapports de base</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Me contacter</a>
+          </div>
+
+          <div class="pricing-card pricing-card-featured">
+            <div class="pricing-badge">Le plus populaire</div>
+            <h3>Pro</h3>
+            <p class="pricing-price">À partir de <strong>XX €/mois</strong></p>
+            <p class="pricing-subtext">Pour les boutiques qui se développent.</p>
+            <ul class="pricing-features">
+              <li>Jusqu’à 5 boutiques</li>
+              <li>Utilisateurs illimités</li>
+              <li>Alertes stock bas & rapports avancés</li>
+              <li>Support prioritaire par email</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary full-width">Parler de mon projet</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Entreprise</h3>
+            <p class="pricing-price">Sur devis</p>
+            <p class="pricing-subtext">
+              Pour les structures multi-sites avec besoins spécifiques.
+            </p>
+            <ul class="pricing-features">
+              <li>Boutiques illimitées</li>
+              <li>Intégrations personnalisées</li>
+              <li>Accompagnement dédié</li>
+              <li>Contrat & SLA sur mesure</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Discuter avec nous</a>
+          </div>
+        </div>
+        <p class="pricing-note">
+          Les tarifs exacts peuvent être ajustés selon ta stratégie. Tu peux mettre à jour les
+          montants directement dans le code.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Questions fréquentes</h2>
+          <p>Quelques réponses aux questions que se posent souvent les clients.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Est-ce que ShopMahelso Inventory est adapté à une petite boutique&nbsp;?</summary>
+            <p>
+              Oui. L’application a été pensée pour les petites et moyennes structures. Tu peux
+              commencer avec une seule boutique et quelques utilisateurs, puis évoluer ensuite.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Puis-je gérer plusieurs boutiques ou dépôts&nbsp;?</summary>
+            <p>
+              Oui. Tu peux créer plusieurs boutiques, basculer entre elles et suivre le stock de
+              chaque lieu de manière séparée tout en gardant une vue d’ensemble.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Mes employés peuvent-ils utiliser l’application&nbsp;?</summary>
+            <p>
+              Bien sûr. Tu peux inviter tes employés et leur attribuer un rôle précis (par
+              exemple, vente uniquement, validation des stocks, consultation des rapports…).
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quels appareils sont supportés&nbsp;?</summary>
+            <p>
+              L’application est conçue pour fonctionner sur mobile et sur ordinateur
+              (selon ton déploiement Flutter/Web). Tu peux ainsi gérer ton stock
+              partout où tu es.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Comment démarrer avec une démo&nbsp;?</summary>
+            <p>
+              Il suffit de remplir le formulaire ci-dessous ou d’envoyer un email à
+              <a href="mailto:support@shopmahelso.com">support@shopmahelso.com</a>.
+              Nous te répondrons avec les prochaines étapes.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-header">
+            <h2>Contact & démo</h2>
+            <p>
+              Tu souhaites découvrir ShopMahelso Inventory, poser une question ou demander un
+              devis&nbsp;? Remplis ce formulaire ou écris-nous directement.
+            </p>
+          </div>
+          <ul class="contact-info">
+            <li><strong>Entreprise :</strong> MAHUGNON SERVICES LTD</li>
+            <li><strong>Adresse :</strong> 20 Wenlock Road, Londres, N1 7GU, Royaume-Uni</li>
+            <li><strong>Numéro d’immatriculation :</strong> 16010860</li>
+            <li><strong>Email :</strong> <a href="mailto:support@shopmahelso.com">support@shopmahelso.com</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- Formulaire statique (tu peux brancher un service type Formspree plus tard) -->
+          <form class="contact-form" action="mailto:support@shopmahelso.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="Nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="Email" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Nom de la boutique / entreprise</label>
+              <input type="text" id="company" name="Entreprise" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="4" placeholder="Explique ton besoin, ton type de boutique, le nombre de points de vente, etc." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">© <span id="year"></span> MAHUGNON SERVICES LTD – ShopMahelso Inventory.</p>
+        <p class="footer-text">
+          Tous droits réservés. Application d’inventaire pour boutiques, entrepôts et PME.
+        </p>
+      </div>
+      <div class="footer-links">
+        <!-- Ces pages pourront pointer vers tes futures pages légales sur GitHub Pages -->
+        <a href="#" class="footer-link">Politique de confidentialité</a>
+        <a href="#" class="footer-link">Conditions d’utilisation</a>
+        <a href="#" class="footer-link">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
