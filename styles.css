@@ -277,7 +277,6 @@ body {
 }
 
 .banner-text {
-  text-align: center;
   background: rgba(15, 23, 42, 0.55);
   backdrop-filter: blur(14px);
   padding: 2rem;
